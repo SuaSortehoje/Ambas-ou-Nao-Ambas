@@ -561,7 +561,7 @@ function enviarMensagemParaWhatsapp() {
     
     var mensagem = `${linktitilo}
                    DATA E HORA ATUAL
-        *Data: ${new Date().toLocaleDateString()}*  -   *Hora: ${new Date().toLocaleTimeString()}*\n
+        *Data: ${new Date().toLocaleDateString()}*     *Hora: ${new Date().toLocaleTimeString()}*\n
         *Nome: ${nome}*\n`;
 
     // Captura das seleções da Série A
@@ -581,7 +581,7 @@ function enviarMensagemParaWhatsapp() {
 // Captura das seleções da Série B
 selectsB.forEach(function(select) {
     if (select.value !== 'opcao') {
-        var imgCasaUrl = select.parentNode.parentNode.querySelector('img:first-of-type').src;o
+        var imgCasaUrl = select.parentNode.parentNode.querySelector('img:first-of-type').src;
         var imgForaUrl = select.parentNode.parentNode.querySelector('img:last-of-type').src;
         var nomeCasa = extrairNomeTime(imgCasaUrl);
         var nomeFora = extrairNomeTime(imgForaUrl);
