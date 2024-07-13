@@ -177,7 +177,7 @@ if (nome && option ) {
     
 
     var optionCasa = document.createElement("option");
-    optionCasa.value = "  OS TIMES => MARCAR  GoL Na Partida";
+    optionCasa.value = "  *OS TIMES* => MARCAR  GoL Na Partida";
     select.style.background = "blue";
     optionCasa.dataset.valor = "5.0";
     optionCasa.textContent = ` Os Times =>
@@ -203,37 +203,37 @@ var optionFora = document.createElement("option");
     select.appendChild(optionFora1);
 
     var option4 = document.createElement("option");
-    option4.value = " CASA => FAZ  GOL NO 1º TEMPO PARTIDA";
+    option4.value = " *CASA* => So FAZ  GOL NO 1º TEMPO PARTIDA";
     option4.dataset.valor = "25";
-    option4.textContent = "CASA => Faz Gol No 1º Tempo Partida";
+    option4.textContent = "CASA => So Faz Gol No 1º Tempo Partida";
     select.appendChild(option4);
 
     var option5 = document.createElement("option");
-    option5.value = "CASA => Faz Gol No 2º Tempo Partida";
+    option5.value = "*CASA* => So Faz Gol No 2º Tempo Partida";
     option5.dataset.valor = "30.00";
-    option5.textContent = "CASA => Faz Gol No 2º Tempo Partida";
+    option5.textContent = "CASA => So Faz Gol No 2º Tempo Partida";
     select.appendChild(option5);
 
     var option6 = document.createElement("option");
-    option6.value = "FORA => Faz Gol No 1º Tempo Partida";
+    option6.value = "*FORA* => So  Faz Gol No 1º Tempo Partida";
     option6.dataset.valor = "35.00";
-    option6.textContent = "FORA => Faz Gol No 1º Tempo Partida";
+    option6.textContent = "FORA => So   Faz Gol No 1º Tempo Partida";
     select.appendChild(option6);
 
   var optioneExtra1 = document.createElement("option");
-    optioneExtra1.value = "FORA => Faz Gol No 2º Tempo Partida";
+    optioneExtra1.value = "*FORA* => So  Faz Gol No 2º Tempo Partida";
     optioneExtra1.dataset.valor = "35.00";
-    optioneExtra1.textContent = "FORA => Faz Gol No 2º Tempo Partida";
+    optioneExtra1.textContent = "FORA => So Faz Gol No 2º Tempo Partida";
     select.appendChild(optioneExtra1);
 
     var option7 = document.createElement("option");
-    option7.value = "EMPATE  => Com Gol NA PARTIDA";
+    option7.value = "*EMPATE*  => Com Gol NA PARTIDA";
     option7.dataset.valor = "40";
     option7.textContent = "EMPATE => Com Gol Na PARTIDA";
     select.appendChild(option7);
     
     /*var option8 = document.createElement("option");
-    option8.value = "SIM/SIM  => faz gol np 1º e 2º Tempo Da Partida";
+    option8.value = "SIM/SIM  => faz gol no 1º e 2º Tempo Da Partida";
     option8.dataset.valor = "50";
     option8.textContent = "SIM/SIM  => faz gol no 1º e 2º Tempo Da Partida";
     select.appendChild(option8);*/
@@ -402,7 +402,7 @@ function countSelections() {
         }
 
         function verificarCalcular() {
-    var dataLimite = new Date('2024-07-11T22:50:00');
+    var dataLimite = new Date('2024-07-13T22:50:00');
     var dataAtual = new Date();
     var selects = document.querySelectorAll('.premioInput');
 
