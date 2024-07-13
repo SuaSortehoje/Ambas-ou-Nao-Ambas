@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="icon" href="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/IMG-20240711-WA0054.jpg" type="image/jpeg">
+    <link rel="icon" href="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/futebolBola.jpg" type="image/jpeg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="icon" href="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/IMG-20240711-WA0054.jpg" type="image/x-icon"> 
-    <meta name="url" content="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/multijoogo.jpg"> 
+    <link rel="icon" href="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/futebolBola.jpg" type="image/x-icon"> 
+    <meta name="url" content="https://raw.githubusercontent.com/SuaSortehoje/placarBet/main/futebolBola.jpg"> 
     <title>Marcar⚽ou⚽Nao⚽Marcar⚽GR</title>
 </head>
 <body onload="verificarCalcular()" style="text-align: center; background: green;">
@@ -277,11 +277,7 @@ var optionFora = document.createElement("option");
         function gerarDivisoesSerieA() {
             gerarDivisoes('A', 'divisions-container-a', imgCasaSerieA, imgForaSerieA, [
                 '2024-07-13T16:00:00',
-                '2024-07-13T16:00:00',
-              
-                
-            
-              
+                '2024-07-13T16:00:00',         
             ]);
         }
 
@@ -520,8 +516,8 @@ function enviarMensagemParaWhatsapp() {
     var valor = parseFloat(document.getElementById('valor_input').value);
 
     // Limitar a aposta a um máximo de 5 reais
-    if (valor > 5) {
-        valor = 5;
+    if (valor > 20) {
+        valor = 20;
        
  document.getElementById('valor_input').value = valor; // Atualizar o valor de entrada no campo de texto
     }
@@ -613,8 +609,8 @@ selectsC.forEach(function(select) {
     var totalValue = parseFloat(totalText.replace('Total: R$ ', '').replace(',', '.'));
 
     // Limitar o valor total a 3000 reais
-    if (totalValue > 3000) {
-        totalValue = 3000;
+    if (totalValue > 10000) {
+        totalValue = 10000;
     }
 
     mensagem += `\n      RECEBER: *R$ ${totalValue.toFixed(2)}*\n`;
